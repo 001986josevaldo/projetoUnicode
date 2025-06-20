@@ -1,0 +1,72 @@
+.galeria {
+  position: relative;
+  max-width: 100%;
+  margin: auto;
+  overflow: hidden;
+  aspect-ratio: 16 / 9; /* Proporção padrão widescreen */
+}
+
+.slides {
+  display: none;
+  width: 100%;
+  height: 100%;
+}
+
+.slides img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;         /* 🔥 Preenche toda a área sem distorcer */
+  object-position: center;   /* Centraliza a imagem */
+  border-radius: 8px;
+  display: block;
+}
+
+.ativo {
+  display: block;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 8px;
+  color: white;
+  font-weight: bold;
+  font-size: 24px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  border-radius: 4px;
+  transform: translateY(-50%);
+  user-select: none;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+.indicadores {
+  text-align: center;
+  margin-top: 8px;
+  padding-bottom: 4px;
+}
+
+.bolinha {
+  cursor: pointer;
+  height: 12px;
+  width: 12px;
+  margin: 0 4px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.3s;
+  border: none;
+}
+
+.bolinha.ativa {
+  background-color: #717171;
+}

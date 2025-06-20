@@ -1,0 +1,86 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>UniCode - Inclusão com Tecnologia</title>
+  <link rel="stylesheet" href="css/estilo1.css" />
+  <link rel="stylesheet" href="css/galeria.css" />
+</head>
+<!-- Botão flutuante: Voltar ao topo -->
+<button id="btnTopo" aria-label="Voltar ao topo">⬆</button>
+
+<!-- Botão flutuante: WhatsApp -->
+<a href="https://wa.me/5566999990000" id="btnWhats" target="_blank" aria-label="Fale conosco no WhatsApp">
+  💬
+</a>
+
+<body>
+  <header>
+    <h1>Projeto UniCode</h1>
+    <p>Inclusão digital através do conhecimento</p>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="atividades.html">Atividades</a></li>
+        <li><a href="inscricao.html">Inscreva-se</a></li>
+        <li><a href="equipe.html">Equipe</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <article> <!-- Seção de boas-vindas -->
+      <h2>Bem-vindo ao Projeto UniCode</h2>
+      <p>
+        O UniCode é uma iniciativa que promove oficinas, grupos de estudo e
+        eventos para integrar estudantes ao mundo da tecnologia e inovação.
+      </p>
+    </article>
+
+    <!-- Seção da galeria -->
+    <section class="galeria" aria-label="Destaques do Projeto UniCode">
+
+      <figure class="slides">
+        <img src="imagem/oficina.png" alt="Slide 1 - Oficina de Programação" />
+      </figure>
+      <figure class="slides">
+        <img src="imagem/Grupo-de-Estudos.jpg" alt="Slide 2 - Grupo de Estudos" />
+      </figure>
+      <figure class="slides">
+        <img src="imagem/Maratona.jpg" alt="Slide 3 - Maratona de Tecnologia" />
+      </figure>
+
+      <button class="prev" onclick="mudarSlide(-1)" aria-label="Slide anterior">❮</button>
+      <button class="next" onclick="mudarSlide(1)" aria-label="Próximo slide">❯</button>
+
+    </section>
+
+    <nav aria-label="Navegação da galeria">
+      <ul class="indicadores">
+        <li><button onclick="irParaSlide(0)" class="bolinha" aria-label="Slide 1"></button></li>
+        <li><button onclick="irParaSlide(1)" class="bolinha" aria-label="Slide 2"></button></li>
+        <li><button onclick="irParaSlide(2)" class="bolinha" aria-label="Slide 3"></button></li>
+      </ul>
+    </nav>
+  </main>
+
+  <footer>
+    <p>
+      Email:
+      <a href="mailto:contato.unicode@unemat.br">contato.unicode@unemat.br</a>
+      | Telefone: (66) 99999-0000
+    </p>
+    <p>Redes: <a href="#">Instagram</a> | <a href="#">Twitter</a></p>
+    <p>
+      &copy; 2025 UniCode UNEMAT. Todos os direitos reservados (fictício).
+    </p>
+  </footer>
+  <script src="js/menu.js"></script>
+  <script src="js/galeria.js"></script>
+
+</body>
+
+</html>

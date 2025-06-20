@@ -1,0 +1,200 @@
+<!-- incrição.html -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Formulário de inscrição para as atividades do Projeto UniCode."
+    />
+    <title>UniCode UNEMAT - Inscreva-se</title>
+    <link rel="stylesheet" href="css/estilo1.css" />
+  </head>
+<!-- Botão flutuante: Voltar ao topo -->
+<button id="btnTopo" aria-label="Voltar ao topo">⬆</button>
+
+<!-- Botão flutuante: WhatsApp -->
+<a href="https://wa.me/5566999990000" id="btnWhats" target="_blank" aria-label="Fale conosco no WhatsApp">
+  💬
+</a>
+  <body>
+    <header>
+      <h1>Projeto UniCode</h1>
+      <p>Inclusão digital através do conhecimento</p>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="atividades.html">Atividades</a></li>
+          <li><a href="inscricao.html">Inscreva-se</a></li>
+          <li><a href="equipe.html">Equipe</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section aria-labelledby="form-title">
+        <h2 id="form-title">Inscreva-se nas Atividades do UniCode</h2>
+        <p>
+          Preencha o formulário abaixo para participar das nossas iniciativas.
+          Entraremos em contato em breve!
+        </p>
+
+        <form action="#" method="POST">
+          <article>
+            <label for="nomeCompleto">Nome completo:</label>
+            <input type="text" id="nomeCompleto" name="nomeCompleto" required />
+          </article>
+
+          <article>
+            <label for="curso">Curso:</label>
+            <input
+              type="text"
+              id="curso"
+              name="curso"
+              value="Ciência da Computação"
+              required
+            />
+          </article>
+
+          <article>
+            <label for="emailInstitucional">E-mail institucional:</label>
+            <input
+              type="email"
+              id="emailInstitucional"
+              name="emailInstitucional"
+              required
+              placeholder="seu.email@unemat.br"
+            />
+          </article>
+
+          <fieldset>
+            <legend>Tipo de participação:</legend>
+            <article>
+              <input
+                type="radio"
+                id="participanteOficina"
+                name="tipoParticipacao"
+                value="oficina"
+                checked
+              />
+              <label for="participanteOficina">Participar de Oficinas</label>
+            </article>
+            <article>
+              <input
+                type="radio"
+                id="participanteMaratona"
+                name="tipoParticipacao"
+                value="maratona"
+              />
+              <label for="participanteMaratona"
+                >Participar de Maratonas/Hackathons</label
+              >
+            </article>
+            <article>
+              <input
+                type="radio"
+                id="grupoEstudos"
+                name="tipoParticipacao"
+                value="grupoEstudos"
+              />
+              <label for="grupoEstudos">Participar de Grupos de Estudos</label>
+            </article>
+            <article>
+              <input
+                type="radio"
+                id="todos"
+                name="tipoParticipacao"
+                value="todos"
+              />
+              <label for="todos">Todas as anteriores</label>
+            </article>
+          </fieldset>
+
+          <fieldset>
+            <legend>Áreas de interesse:</legend>
+            <article>
+              <input
+                type="checkbox"
+                id="interesseDevWeb"
+                name="areasInteresse[]"
+                value="devWeb"
+              />
+              <label for="interesseDevWeb">Desenvolvimento Web</label>
+            </article>
+            <article>
+              <input
+                type="checkbox"
+                id="interesseMobile"
+                name="areasInteresse[]"
+                value="mobile"
+              />
+              <label for="interesseMobile">Desenvolvimento Mobile</label>
+            </article>
+            <article>
+              <input
+                type="checkbox"
+                id="interesseIA"
+                name="areasInteresse[]"
+                value="ia"
+              />
+              <label for="interesseIA">Inteligência Artificial</label>
+            </article>
+            <article>
+              <input
+                type="checkbox"
+                id="interesseDados"
+                name="areasInteresse[]"
+                value="dados"
+              />
+              <label for="interesseDados">Ciência de Dados</label>
+            </article>
+            <article>
+              <input
+                type="checkbox"
+                id="interesseSeguranca"
+                name="areasInteresse[]"
+                value="seguranca"
+              />
+              <label for="interesseSeguranca">Segurança da Informação</label>
+            </article>
+            <article>
+              <input
+                type="checkbox"
+                id="interesseJogos"
+                name="areasInteresse[]"
+                value="jogos"
+              />
+              <label for="interesseJogos">Desenvolvimento de Jogos</label>
+            </article>
+          </fieldset>
+
+          <article>
+            <label for="comentarios">Comentários ou sugestões:</label>
+            <textarea id="comentarios" name="comentarios" rows="4"></textarea>
+          </article>
+
+          <button type="submit">Enviar Inscrição</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <section>
+        <p>Contatos Fictícios:</p>
+        <p>
+          Email:
+          <a href="mailto:contato.unicode@unemat.br"
+            >contato.unicode@unemat.br</a
+          >
+          | Telefone: (66) 99999-0000
+        </p>
+        <p>
+          &copy; 2025 UniCode UNEMAT. Todos os direitos reservados (fictício).
+        </p>
+      </section>
+    </footer>
+    <script src="js/validacaoFormulario.js"></script>
+    <script src="js/menu.js"></script>
+  </body>
+</html>

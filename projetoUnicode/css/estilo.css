@@ -1,0 +1,339 @@
+/* css/estilo.css */
+
+/* Basic Reset & Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    padding-top: 70px;
+    /* Adjusted for fixed header height */
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 20px;
+}
+
+/* Header & Navigation */
+header {
+    background: #35424a;
+    color: #ffffff;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    min-height: 70px;
+    border-bottom: #0779e4 3px solid;
+    position: fixed;
+    /* Fixed navigation */
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+header a {
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header .logo-area {
+    float: left;
+    margin-left: 20px;
+}
+
+header .logo-area h1 {
+    margin: 0;
+    font-size: 24px;
+    /* UNEMAT text logo */
+}
+
+header .logo-area .tagline {
+    margin: 0;
+    font-size: 14px;
+    color: #ccc;
+}
+
+header nav {
+    float: right;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+header nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+header nav ul li a:hover {
+    color: #0779e4;
+    font-weight: bold;
+}
+
+/* Main Content Area */
+main {
+    padding: 20px 0;
+}
+
+article,
+section {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+
+h1,
+h2,
+h3 {
+    color: #35424a;
+}
+
+/* Home Page Specific */
+#showcase {
+    min-height: 400px;
+    background: url("../imagem/banner-placeholder.png") no-repeat center center/cover;
+    /* Add a banner image */
+    text-align: center;
+    color: #ffffff;
+    /* Text color on top of banner */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #333;
+    /* Fallback color if image doesn't load */
+}
+
+#showcase h1 {
+    font-size: 55px;
+    margin-bottom: 10px;
+    color: #fff;
+    /* Ensure visibility against dark/image background */
+}
+
+#showcase p {
+    font-size: 20px;
+    color: #fff;
+    /* Ensure visibility */
+}
+
+.introduction {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+}
+
+/* Atividades Page */
+.activity-list,
+.event-table {
+    margin-bottom: 30px;
+}
+
+.activity-list h3,
+.event-table h3 {
+    border-bottom: 2px solid #0779e4;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.activity-list ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+.event-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.event-table th,
+.event-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.event-table th {
+    background-color: #35424a;
+    color: white;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+/* Adicionado/Modificado: Estilo para a legenda do fieldset */
+.form-group legend {
+    font-weight: bold;
+    margin-bottom: 10px;
+    /* Aumenta o espaço abaixo da legenda */
+    display: block;
+    /* Garante que ocupe a linha */
+}
+
+.form-group label {
+    /* Para labels gerais como "Nome completo:", "Curso:" */
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    /* Ensures padding doesn't affect width */
+}
+
+.form-group textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+/* Modificado: Styling for radio and checkbox options containers */
+.form-group .radio-group,
+.form-group .checkbox-group {
+    display: flex;
+    /* Usa flexbox para alinhar flag e label na mesma linha */
+    align-items: center;
+    /* Alinha verticalmente o flag com o texto do label */
+    margin-bottom: 8px;
+    /* Espaço entre cada opção de radio/checkbox */
+}
+
+/* Modificado: Styling for radio and checkbox inputs */
+.form-group .radio-group input[type="radio"],
+.form-group .checkbox-group input[type="checkbox"] {
+    margin-right: 8px;
+    /* Espaço entre o input (marcador) e o seu label (texto) */
+    margin-top: 0;
+    /* Remove margens que possam interferir no alinhamento flex */
+    margin-bottom: 0;
+    flex-shrink: 0;
+    /* Impede que o input encolha se o texto for longo */
+}
+
+/* Modificado: Styling for radio and checkbox labels (o texto da opção) */
+.form-group .radio-group label,
+.form-group .checkbox-group label {
+    font-weight: normal;
+    /* Garante que o texto da opção não seja negrito */
+    display: inline;
+    /* Comportamento inline para o label */
+    margin-bottom: 0;
+    /* Remove margem inferior que poderia vir do .form-group label genérico */
+    line-height: 1.5;
+    /* Ajusta a altura da linha para melhor alinhamento visual com o input */
+}
+
+
+.submit-btn {
+    display: block;
+    width: auto;
+    background: #0779e4;
+    color: #ffffff;
+    padding: 10px 15px;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.submit-btn:hover {
+    background: #065fb3;
+}
+
+
+/* Equipe */
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    /* Responsive grid */
+    gap: 30px;
+}
+
+.team-member {
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: center;
+}
+
+.team-member figure {
+    margin: 0 0 10px 0;
+}
+
+.team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    /* Circular images */
+    object-fit: cover;
+    margin-bottom: 10px;
+    border: 3px solid #0779e4;
+}
+
+.team-member figcaption h4 {
+    margin: 5px 0;
+    color: #0779e4;
+}
+
+.team-member figcaption p {
+    font-size: 0.9em;
+    color: #555;
+}
+
+/* Footer */
+footer {
+    padding: 20px;
+    margin-top: 20px;
+    color: #ffffff;
+    background-color: #35424a;
+    text-align: center;
+    border-top: #0779e4 3px solid;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer .social-links a {
+    margin: 0 10px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+footer .social-links a:hover {
+    color: #0779e4;
+}
+
+/* Accessibility */
+.sr-only {
+    /* Screen-reader only class */
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
