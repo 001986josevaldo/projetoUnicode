@@ -27,14 +27,17 @@ O sistema inclui páginas de inscrição, apresentação de atividades, equipe e
 ├── inscricao.html
 ├── atividades.html
 ├── equipe.html
+
 ├── css/
 │ ├── estilo1.css
 │ └── galeria.css
+
 ├── js/
 │ ├── menu.js
 │ ├── galeria.js
 │ ├── flutuantes.js
 │ └── validacaoFormulario.js
+
 ├── imagem/
 │ ├── slide1.jpg
 │ ├── slide2.jpg
