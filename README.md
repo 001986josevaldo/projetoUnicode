@@ -23,22 +23,39 @@ O sistema inclui páginas de inscrição, apresentação de atividades, equipe e
 ## 📁 Estrutura de Arquivos
 
 📦 projetoUnicode/
+
 ├── index.html
+
 ├── inscricao.html
+
 ├── atividades.html
+
 ├── equipe.html
+
 ├── css/
+
 │ ├── estilo1.css
+
 │ └── galeria.css
+
 ├── js/
+
 │ ├── menu.js
+
 │ ├── galeria.js
+
 │ ├── flutuantes.js
+
 │ └── validacaoFormulario.js
+
 ├── imagem/
+
 │ ├── slide1.jpg
+
 │ ├── slide2.jpg
+
 │ └── slide3.jpg
+
 
 ## 📝 Observações
 
@@ -49,5 +66,7 @@ O sistema inclui páginas de inscrição, apresentação de atividades, equipe e
 ## 📌 Autor
 
 Desenvolvido por Josevaldo Moreria
+
 Curso: Ciência da Computação – UNEMAT
+
 Disciplina: Desenvolvimento de sistemas web  
