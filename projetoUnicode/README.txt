@@ -22,7 +22,7 @@ O sistema inclui páginas de inscrição, apresentação de atividades, equipe e
 
 ## 📁 Estrutura de Arquivos
 
-📦 projeto-unicode/
+📦 projetoUnicode/
 ├── index.html
 ├── inscricao.html
 ├── atividades.html
