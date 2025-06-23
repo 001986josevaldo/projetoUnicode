@@ -7,7 +7,7 @@ O sistema inclui páginas de inscrição, apresentação de atividades, equipe e
 
 - **HTML5** – Estrutura semântica das páginas
 - **CSS3** – Estilização visual, responsividade e elementos flutuantes
-- **JavaScript (Vanilla)** – Comportamentos dinâmicos, validação de formulários, galeria de imagens, botões interativos
+- **JavaScript** – Comportamentos dinâmicos, validação de formulários, galeria de imagens, botões interativos
 
 ## 🧱 Funcionalidades Desenvolvidas
 
@@ -52,8 +52,10 @@ O sistema inclui páginas de inscrição, apresentação de atividades, equipe e
 
 ## 📌 Autor
 
-Desenvolvido por Josevaldo Moreria
+Desenvolvido por Josevaldo Moreira
 
-Curso: Ciência da Computação – UNEMAT
+UNEMAT - Núcleo Pedagógico de Rondonópolis
 
-Disciplina: Desenvolvimento de sistemas web  
+Curso: Ciência da Computação
+
+Disciplina: Desenvolvimento de Sistemas Web  
